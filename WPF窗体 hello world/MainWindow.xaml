@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF窗体_hello_world.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF窗体_hello_world"
+        mc:Ignorable="d"
+        Title="时钟" Background="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Height="244.436" Width="487.813" ResizeMode="NoResize">
+    <Grid Margin="0,0,-8,-1" MinWidth="189" HorizontalAlignment="Left" Width="488">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.OpacityMask>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0A84FF" Offset="1"/>
+                <GradientStop Color="#FF80BFFF"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3CDAFD" Offset="0.043"/>
+                <GradientStop Color="#FF31D2F5" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="154,153,0,0" TextWrapping="Wrap" Text="当前时间" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="stop" Content="停止" HorizontalAlignment="Left" Margin="268,157,0,0" VerticalAlignment="Top" Width="86" Click="stop_Click" Height="26"/>
+        <TextBlock x:Name="timeText" HorizontalAlignment="Left" Margin="30,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="126" Width="422" FontSize="48" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
